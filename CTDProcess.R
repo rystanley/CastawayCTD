@@ -10,7 +10,7 @@ CTDProcess <- function(path,datetime=T,returncols=F){
       #             legend of changes will  be printed
   
     ## read in data (data.table has a nice and efficient fast reading function)
-      dat <-  data.table::fread(file,
+      dat <-  data.table::fread(path,
                                 header = FALSE, sep = "\t",
                                 stringsAsFactors = FALSE)
       
