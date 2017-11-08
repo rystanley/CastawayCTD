@@ -15,7 +15,9 @@ eval(parse(text = script1))
 eval(parse(text = script2))
 ```
 
-## Example use
+## Example use. 
+
+*Note that example usage requires a path to the local folder* **CTD Casts**. *The* **CTD Casts** *folder used in these examples is included in this repository.* 
 
 ```r
 
