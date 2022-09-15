@@ -10,7 +10,7 @@ ctd_check <- function(path){
   ## remove the "% " at the beginning of the meta-data
   dat <- as.vector(apply(dat,1,function(x) gsub("\\% ","",x)))
   
-  if(sum(grepl("Invalid",dat))>0){return("invalid set")}else{return("valid set")}
+  if(sum(grepl("Invalid",dat))>0){return("FALSE")}else{return("TRUE")} #TRUE it's valid or FALSE it's not
 
   
 }
