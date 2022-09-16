@@ -6,13 +6,14 @@ To source the scripts to your R environment use the following scripts and the pa
 ## Installation
 
 ```r
-script1 <- RCurl::getURL("https://raw.githubusercontent.com/rystanley/CastawayCTD/master/CTDProcess.R",ssl.verifypeer = FALSE)
 
-script2 <- RCurl::getURL("https://raw.githubusercontent.com/rystanley/CastawayCTD/master/CTDProcessBatchProcess.R",ssl.verifypeer = FALSE)
+library(devtools)
 
-eval(parse(text = script1))
+source_url("https://raw.githubusercontent.com/rystanley/CastawayCTD/master/code/CTDProcess.R") #parsing script
 
-eval(parse(text = script2))
+source_url("https://raw.githubusercontent.com/rystanley/CastawayCTD/master/code/CTDProcessBatchProcess.R") #batch processing script
+
+source_url("https://raw.githubusercontent.com/rystanley/CastawayCTD/master/code/ctd_check.R") #script for checking whether casts are valid
 ```
 
 ## Example use. 
